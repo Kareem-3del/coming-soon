@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-theme="night">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="theme-color" content="#000000"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" href="/src/public/logo192.png"/>
+    <link rel="manifest" href="data:application/json;base64,ewogICJzaG9ydF9uYW1lIjogIlJlYWN0IEFwcCIsCiAgIm5hbWUiOiAiQ3JlYXRlIFJlYWN0IEFwcCBTYW1wbGUiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgInRoZW1lX2NvbG9yIjogIiMwMDAwMDAiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiCn0K"/>
+    <title>React App</title>
+    <script type="module" crossorigin src="/assets/index.688f95a7.js"></script>
+    <link rel="stylesheet" href="/assets/index.34951e89.css">
+    <style>
+      *,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  height:100%;
+  width: 100%;
+}
+
+body {
+  padding:50px;
+  margin:0;
+  overflow:hidden;
+  background-color:#FAFAFA;
+}
+
+@-webkit-keyframes swinging{
+  0%{-webkit-transform: rotate(10deg);}
+  50%{-webkit-transform: rotate(-5deg)}
+  100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+  0%{transform: rotate(10deg);}
+  50%{transform: rotate(-5deg)}
+  100%{transform: rotate(10deg);}
+}
+
+
+@-webkit-keyframes sleeping {
+  0%{ opacity:0;}
+  50%{ opacity:1;}
+  100%{ opacity:0;}
+}
+
+@keyframes sleeping {
+  0%{ opacity:0;}
+  50%{ opacity:1;}
+  100%{ opacity:0;}
+}
+
+#swinger {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  transform-box: fill-box;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+#zone {
+  opacity:0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+}
+
+#ztwo {
+  opacity:0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay:0.4s;
+  -website-animation-delay:0.4s;
+}
+
+#zthree {
+  opacity:0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay:0.7s;
+  -website-animation-delay:0.7s;
+}
+
+#zfour {
+  opacity:0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay:1s;
+  -website-animation-delay:1s;
+}
+
+#zfive {
+  opacity:0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay:1.3s;
+  -website-animation-delay:1.3s;
+}
+
+.container {
+  text-align:center;
+}
+
+svg {
+  max-width:1000px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="alerts"></div>
+ <div className="fixed w-screen h-screen bg-white">
+                <object  data={BuildingSVG}></object>
+        </div>
+    
+  </body>
+</html>
