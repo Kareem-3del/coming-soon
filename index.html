@@ -56,7 +56,17 @@ body {
   50%{ opacity:1;}
   100%{ opacity:0;}
 }
-
+.fixed{
+	    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+	    }
+	    
 #swinger {
   -webkit-transform-origin: top center;
   transform-origin: top center;
@@ -107,14 +117,10 @@ body {
   text-align:center;
 }
 
-svg {
-  max-width:1000px;
-}
     </style>
   </head>
   <body>
-    <div id="root"></div>
-    <div id="alerts"></div>
+
  <div className="fixed w-screen h-screen bg-white">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 1536.2 755.1" style="enable-background:new 0 0 1536.2 755.1;" xml:space="preserve">
